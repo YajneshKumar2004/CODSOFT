@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ShopEase - Your Online Store</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Smooth scroll for all anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href');
+          const targetElement = document.querySelector(targetId);
+          
+          if (targetElement) {
+            targetElement.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">ShopEase</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Discover Your Style</h1>
+        <p class="hero-subtitle">Shop the latest trends in fashion, electronics, and more</p>
+        <div class="hero-features">
+          <div class="feature">
+            <span class="feature-icon">🚚</span>
+            <span>Free Shipping</span>
+          </div>
+          <div class="feature">
+            <span class="feature-icon">💎</span>
+            <span>Premium Quality</span>
+          </div>
+          <div class="feature">
+            <span class="feature-icon">🛡️</span>
+            <span>Secure Payment</span>
+          </div>
+        </div>
+        <div class="hero-cta">
+          <a href="#products" class="btn">Shop Now</a>
+          <a href="#categories" class="btn btn-outline">Explore Categories</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="images/hero-section.jpg" alt="Shopping Experience" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Showcase -->
+  <section id="products" class="products">
+    <h2>Featured Products</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="images/Wireless Headphones.jpg" alt="Wireless Headphones" />
+        <h3>Wireless Headphones</h3>
+        <p>₹2,999</p>
+        <a href="#" class="btn">Buy</a>
+      </div>
+      <div class="product-card">
+        <img src="images/Running Shoes.jpg" alt="Running Shoes" />
+        <h3>Running Shoes</h3>
+        <p>₹1,899</p>
+        <a href="#" class="btn">Buy</a>
+      </div>
+      <div class="product-card">
+        <img src="images/Smart Watch.jpg" alt="Smart Watch" />
+        <h3>Smart Watch</h3>
+        <p>₹3,499</p>
+        <a href="#" class="btn">Buy</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section id="categories" class="categories">
+    <h2>Shop by Category</h2>
+    <div class="category-grid">
+      <div class="category-card">👕 Fashion</div>
+      <div class="category-card">📱 Electronics</div>
+      <div class="category-card">🏠 Home</div>
+      <div class="category-card">🎁 Gifts</div>
+    </div>
+  </section>
+
+  <!-- Customer Reviews -->
+  <section id="reviews" class="reviews">
+    <h2>What Our Customers Say</h2>
+    <div class="review-container">
+      <div class="review-card">
+        <div class="review-stars">⭐⭐⭐⭐⭐</div>
+        <p class="review-text">"Amazing shopping experience! The products are high quality and delivery was super fast. Will definitely shop here again!"</p>
+        <div class="reviewer">
+          <img src="images/customer1.jpg" alt="Customer 1" class="reviewer-img" />
+          <div class="reviewer-info">
+            <h4>Sarah Johnson</h4>
+            <p>Regular Customer</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">⭐⭐⭐⭐⭐</div>
+        <p class="review-text">"Best online store I've ever used. Great prices, excellent customer service, and the return policy is fantastic!"</p>
+        <div class="reviewer">
+          <img src="images/customer2.jpg" alt="Customer 2" class="reviewer-img" />
+          <div class="reviewer-info">
+            <h4>Michael Chen</h4>
+            <p>Verified Buyer</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">⭐⭐⭐⭐⭐</div>
+        <p class="review-text">"The variety of products is incredible. Found everything I needed in one place. Highly recommend!"</p>
+        <div class="reviewer">
+          <img src="images/customer3.jpg" alt="Customer 3" class="reviewer-img" />
+          <div class="reviewer-info">
+            <h4>Emma Davis</h4>
+            <p>Loyal Customer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <h2>Get 10% Off Your First Order</h2>
+    <p>Sign up for our newsletter</p>
+    <form>
+      <input type="email" placeholder="Enter your email" required />
+      <button type="submit" class="btn">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <p>&copy; 2025 ShopEase. All rights reserved.</p>
+  </footer>
+</body>
+</html>
